@@ -10,7 +10,7 @@ class soundmanagerJs extends JsPlugin{
     }
 
     public function init(){
-        $this->Html->LoadJs($this->url."/js/sm2.min", true);
+        $this->Html->LoadBowerComponent("SoundManager2/script/soundmanager2-jsmin");
     }
     
     public function play($sound_file, $soundid){
